@@ -303,7 +303,7 @@ bool ei_camera_init(void) {
     s->set_vflip(s, 1);
     s->set_hmirror(s, 1);
 #elif defined(CAMERA_MODEL_ESP_EYE)
-    // 🌟 保持修正狀態：關閉上下顛倒與左右鏡像，照片恢復正常視角
+    // 保持修正狀態：關閉上下顛倒與左右鏡像，照片恢復正常視角
     s->set_vflip(s, 0);
     s->set_hmirror(s, 0);
     s->set_awb_gain(s, 1);
